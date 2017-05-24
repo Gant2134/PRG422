@@ -16,10 +16,14 @@ int main(int argc, char* argv[])
 	int size = sizeof(myarray); //sizeof is telling you the Size of a specific 
 	printf("The size of an array is %i", size);
 
+	
+
+	a.AddNumber(1);
+	a.AddNumber(2);
+	a.AddNumber(3);
+	a.debug();
+
 	scanf("%c", &c);
-
-
-
 	return 0;
 
 

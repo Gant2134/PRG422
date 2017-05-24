@@ -120,6 +120,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="A.cpp" />
     <ClCompile Include="main.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

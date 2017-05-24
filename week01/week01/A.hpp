@@ -3,18 +3,11 @@
 class A 
 {
 public:
-	A() //default constructor
-	{
-		//new is a memory allocation operator
-		array = new int[10];
-	
-	}
-	//destructor - places holder to release allocated memory
-	~A()
-	{
-		delete[] array;//DELETE ALL THAT SHIT!!!!
-	}
-
+	A();
+	~A();
+	void AddNumber(int n);
+	int m_counter;
+	void debug(void);
 private:
 	//The notiation <TYPE*> means we are declaring the pointer to a variable of type int
 	int* array;
