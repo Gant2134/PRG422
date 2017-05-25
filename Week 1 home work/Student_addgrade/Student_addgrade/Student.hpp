@@ -6,14 +6,15 @@
 class Student 
 {
 private:
-	
+	std::string m_FirstName = "John";
+	std::string m_Lastname = "Doe";
 	float* m_grade;
-	int m_capacity;
-	int m_max;
+
 
 public:
 	
-	Student(void);
+	Student(int m);
+	void Addgrade(int *c, int m_max, float g);
 	~Student(void);
 
 

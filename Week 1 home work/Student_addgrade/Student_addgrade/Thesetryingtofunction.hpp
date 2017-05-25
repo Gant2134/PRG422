@@ -5,12 +5,15 @@
 class functions 
 {
 public:
-	void Addgrade(float grade);
-	void debug();
-	void ExtendArray(int**prt, int old_cap, int new_cap);
+	
+	
+	void debug(int p, float ** O);
+	//void ExtendArray(int**prt, float old_cap, float new_cap);
 
 
 
+
+	//void ExtendArray();
 
 };
 

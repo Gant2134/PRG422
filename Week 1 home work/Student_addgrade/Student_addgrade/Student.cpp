@@ -2,14 +2,28 @@
 #include <iostream>
 
 
-Student::Student() 
+Student::Student(int m)
 {
+
+
 	
-	m_max = 10;
-	m_grade = new float[m_max];
-	m_capacity = 0;
+	std::string m_FirstName;
+	std::string m_Lastname;
+	m_grade = new float[m];
+	
 	
 }
+
+void Student::Addgrade(int *c,int m, float g)
+{
+	if (*c >= m- 1)
+	{
+		return;
+	}
+	m_grade[*c] = g;
+	c++;
+}
+
 
 Student::~Student()
 {
