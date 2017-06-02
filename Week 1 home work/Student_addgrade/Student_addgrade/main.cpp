@@ -2,22 +2,28 @@
 #include <cstring>
 #include "Student.hpp"
 #include "Thesetryingtofunction.hpp"
+#include "Vector.hpp"
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 int main(int argc, char* argv[])
 {
 	char c;
-	int max = 10;
+	Student John;
 	int counter = 0;
-	float grade = 39.5;
-	Student John(max);
+	
 
-	John.Addgrade(&counter, max, grade);
+	for( int i = 0; i < 30; i++ )
+	{
+		John.Addgrade( i * 10 );
+    }
+	John.debug();
 
 
-	void debug(int counter, float &&m_grade);
-
-
-
+		
+	
 	scanf("%c", &c);
 	return 0;
 }

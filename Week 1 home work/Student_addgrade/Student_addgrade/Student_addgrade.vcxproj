@@ -114,11 +114,12 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Student.cpp" />
-    <ClCompile Include="Thesetryingtofunction.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ExtendArrayTemplate.hpp" />
     <ClInclude Include="Student.hpp" />
     <ClInclude Include="Thesetryingtofunction.hpp" />
+    <ClInclude Include="Vector.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,33 +1,49 @@
 #include "Student.hpp"
 #include <iostream>
+#include "ExtendArrayTemplate.hpp"
+#include "Vector.hpp"
+
+using namespace std;
 
 
-Student::Student(int m)
+
+Student::Student()
 {
 
 
 	
 	std::string m_FirstName;
 	std::string m_Lastname;
-	m_grade = new float[m];
+	Vector<int> m_grade;
+	
+	
+	
 	
 	
 }
 
-void Student::Addgrade(int *c,int m, float g)
+
+
+
+
+
+
+void Student::Addgrade(int c)
 {
-	if (*c >= m- 1)
-	{
-		return;
-	}
-	m_grade[*c] = g;
-	c++;
+	m_grade.AddElement(c);
+}
+
+
+
+void Student::debug()
+{
+	m_grade.debug();
 }
 
 
 Student::~Student()
 {
-	delete[] m_grade;
+	
 }
 
 
