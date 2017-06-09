@@ -8,18 +8,17 @@
 class Student 
 {
 private:
+	int m_id = 0;
 	std::string m_FirstName = "John";
 	std::string m_Lastname = "Doe";
 	Vector<int> m_grade;
-	//float m_score;
+	Vector<const char*>m_name;
 
-
-	//void ExtendArray <int>(int**prt, int m_capacity, int new_max);
-
-public:
+	public:
 	
 	Student();
-	void Addgrade(int c);	
+	void Addgrade(int c);
+	void Addstring(const char*);
 	void debug(void);
 	~Student(void);
 	

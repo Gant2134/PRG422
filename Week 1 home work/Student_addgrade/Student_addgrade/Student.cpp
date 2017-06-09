@@ -2,6 +2,7 @@
 #include <iostream>
 #include "ExtendArrayTemplate.hpp"
 #include "Vector.hpp"
+#include"String.hpp"
 
 using namespace std;
 
@@ -33,12 +34,21 @@ void Student::Addgrade(int c)
 	m_grade.AddElement(c);
 }
 
+void Student::Addstring(const char* n)
+{
+	m_name.AddElement(n);
+
+}
+
+
 
 
 void Student::debug()
 {
 	m_grade.debug();
 }
+
+
 
 
 Student::~Student()
